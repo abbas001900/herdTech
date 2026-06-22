@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/output/output.css">
-    <title>Home</title>
+    <title>Tableau de Bord</title>
 </head>
 
 <body class="bg-gray-100">
@@ -123,8 +123,8 @@
             </ul>
         </nav>
     </header>
-    <div class="flex relative w-full h-full group bg-gray-200">
-        <input type="checkbox" name="burger-menu" id="burger-menu" class="peer hidden"/>
+    <div class="flex relative w-full h-full group bg-gray-300 min-h-screen overflow-hidden">
+        <input type="checkbox" name="burger-menu" id="burger-menu" class="peer hidden" />
         <label for="burger-menu"
             class="absolute top-2 left-2 z-100 transition-all duration-300 transform peer-checked:translate-x-32 sm:hidden">
             <svg class="w-10 h-10 font-extrabold flex items-center transition-all duration-300 group-open:rotate-90 bg-white rounded-lg p-1"
@@ -134,7 +134,7 @@
             </svg>
         </label>
         <aside
-            class="transform transition-all duration-300 -translate-x-full sm:translate-x-0 peer-checked:translate-x-0 sm:block lg:hidden fixed h-screen w-32 z-10 bg-gray-100">
+            class=" min-h-screen transform transition-all duration-300 -translate-x-full sm:translate-x-0 peer-checked:translate-x-0 sm:block lg:hidden fixed overflow-y-scroll h-screen w-32 z-10 bg-gray-100">
             <nav>
                 <ul class="flex flex-col justify-start gap-3 items-center px-8 py-4">
                     <li><a href="#"
@@ -209,7 +209,8 @@
                             </nav>
                         </details>
                     </li>
-                    <li class="flex justify-center items-center text-center w-16 h-16 cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4">
+                    <li
+                        class="flex justify-center items-center text-center w-16 h-16 cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4">
                         <details class="group relative" name="info-details">
                             <summary class="flex gap-2 justify-center items-center cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
@@ -244,7 +245,256 @@
             </nav>
         </aside>
         <main
-            class="bg-gray-300 min-h-screen h-full w-full sm:ml-32 transform transition-all duration-300 peer-checked:translate-x-32 z-0">
+            class="min-h-screen h-full w-full sm:ml-32 px-4 lg:mx-auto xl:mx-auto xl:px-12 transform transition-all duration-300 peer-checked:translate-x-32 z-0 space-y-6 overflow-hidden">
+            <h1 class="flex justify-start items-center px-2 py-6 gap-2 text-xl font-medium mt-8 ml-8 sm:ml-auto mt:auto"
+                id="titre-page"><a href="#"
+                    class="flex flex-col justify-center items-center text-center w-14 h-14 cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4"><img
+                        src="assets/icon/dashboard.svg" class="w-10 h-10" alt="home icon" /></a>Tableau de bord</h1>
+
+            <section class="flex flex-col gap-2 xl:flex-row p-6 bg-gray-200 rounded-lg">
+                <ul class="grid grid-cols-2 sm:grid-cols-4 min-h-96 gap-4 flex-1">
+                    <li class="bg-white rounded-lg px-2 py-1 lg:py-4 lg:px-6 text-center">
+                        <div class="flex justify-center gap-2 items-center p-1">
+                            <img src="./assets/icon/Carte de la ferme.svg" alt="Icone de la carte de la ferme"
+                                class="w-12 h-12"><span class="text-xl font-bold">27</span>
+                        </div>
+                        <p class="text-lg">Nombre d'elements sur carte</p>
+                    </li>
+                    <li class="bg-white rounded-lg px-2 py-1 lg:py-4 lg:px-6 text-center">
+                        <div class="flex justify-center gap-2 items-center p-1">
+                            <img src="./assets/icon/Cheptel.svg" alt="Icone Cheptel"
+                                class="w-12 h-12"><span class="text-xl font-bold">43</span>
+                        </div>
+                        <p class="text-lg">Nombre de bovins</p>
+                    </li>
+                    <li class="bg-white rounded-lg px-2 py-1 lg:py-4 lg:px-6 text-center">
+                        <div class="flex justify-center gap-2 items-center p-1">
+                            <img src="./assets/icon/Ovins.svg" alt="Icone d'Ovins"
+                                class="w-12 h-12"><span class="text-xl font-bold">108</span>
+                        </div>
+                        <p class="text-lg">Nombre d'ovins</p>
+                    </li>
+                    <li class="bg-white rounded-lg px-2 py-1 lg:py-4 lg:px-6 text-center col-start-1 row-start-2">
+                        <div class="flex justify-center gap-2 items-center p-1">
+                            <img src="./assets/icon/Stockage.svg" alt="Icone de Stockage"
+                                class="w-12 h-12"><span class="text-xl font-bold">62</span>
+                        </div>
+                        <p class="text-lg">Nombre d'elements Stocker</p>
+                    </li>
+                    <li class="bg-white rounded-lg px-2 py-1 lg:py-4 lg:px-6 text-center col-start-2 row-start-2">
+                        <div class="flex justify-center gap-2 items-center p-1">
+                            <img src="./assets/icon/Suivi du bétail.svg" alt="Icone de la carte de la ferme"
+                                class="w-12 h-12"><span class="text-xl font-bold">4</span>
+                        </div>
+                        <p class="text-lg">Nombre de tag RHD a configurés</p>
+                    </li>
+                    <li class="bg-white rounded-lg px-2 py-1 lg:py-4 lg:px-6 text-center col-start-3 row-start-2">
+                        <div class="flex justify-center gap-2 items-center p-1">
+                            <img src="./assets/icon/Gestionnaire de Taches.svg" alt="Icone de la carte de la ferme"
+                                class="w-12 h-12"><span class="text-xl font-bold">17</span>
+                        </div>
+                        <p class="text-lg">Nombre de taches a efectuées</p>
+                    </li>
+                    <li class="bg-white rounded-lg px-2 py-1 lg:py-4 lg:px-6 text-center col-start-4 row-start-2">
+                        <div class="flex justify-center gap-2 items-center p-1">
+                            <img src="./assets/icon/Notifications.svg" alt="Icone de la carte de la ferme"
+                                class="w-12 h-12"><span class="text-xl font-bold">16</span>
+                        </div>
+                        <p class="text-lg">Nombre de notifications</p>
+                    </li>
+                </ul>
+                <div class="sm:flex-1 sm:flex-col gap-4 hidden sm:flex">
+                    <h2 class="bg-white px-4 py-2 rounded-lg">Coordonnees:13.495217679105107.2.109454809067691</h2>
+                    <img src="./assets/icon/Farm-Map.jpeg" alt="Carte satellite de la ferme"
+                        class="w-full h-full rounded-lg">
+                </div>
+            </section>
+
+            <section
+                class="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 min-h-140 bg-gray-200 rounded-lg mb-6 gap-6 p-6 2xl:min-h-200">
+                <div class="bg-white rounded-lg shadow-lg p-8 grid grid-cols-3 grid-rows-3 gap-4">
+                    <div class="rounded-4xl shadow-md flex justify-center items-center">
+                        <img src="./assets/icon/Vache.svg" alt="Icone de Vache" class="w-12">
+                    </div>
+                    <div class="rounded-4xl shadow-md flex justify-center items-center">
+                        <img src="./assets/icon/Taureau.svg" alt="Icone de Taureau" class="w-12">
+                    </div>
+                    <div class="rounded-4xl shadow-md flex justify-center items-center">
+                        <img src="./assets/icon/Brebis.svg" alt="Icone de Brebis" class="w-12">
+                    </div>
+                    <div class="rounded-4xl shadow-md flex justify-center items-center">
+                        <img src="./assets/icon/Béliers.svg" alt="Icone de Béliers" class="w-12">
+                    </div>
+                    <div class="rounded-4xl shadow-md flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-taxi-front" viewBox="0 0 16 16">
+                            <path
+                                d="M4.862 5.276 3.906 7.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 5H5.309a.5.5 0 0 0-.447.276M4 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-9 0a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1" />
+                            <path
+                                d="M6 1a1 1 0 0 0-1 1v1h-.181A2.5 2.5 0 0 0 2.52 4.515l-.792 1.848a.8.8 0 0 1-.38.404c-.5.25-.855.715-.965 1.262L.05 9.708a2.5 2.5 0 0 0-.049.49v.413c0 .814.39 1.543 1 1.997V14.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.338c1.292.048 2.745.088 4 .088s2.708-.04 4-.088V14.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.892c.61-.454 1-1.183 1-1.997v-.413q0-.248-.049-.49l-.335-1.68a1.8 1.8 0 0 0-.964-1.261.8.8 0 0 1-.381-.404l-.792-1.848A2.5 2.5 0 0 0 11.181 3H11V2a1 1 0 0 0-1-1zM4.819 4h6.362a1.5 1.5 0 0 1 1.379.91l.792 1.847a1.8 1.8 0 0 0 .853.904c.222.112.381.32.43.564l.336 1.679q.03.146.029.294v.413a1.48 1.48 0 0 1-1.408 1.484c-1.555.07-3.786.155-5.592.155s-4.037-.084-5.592-.155A1.48 1.48 0 0 1 1 10.611v-.413q0-.148.03-.294l.335-1.68a.8.8 0 0 1 .43-.563c.383-.19.685-.511.853-.904l.792-1.848A1.5 1.5 0 0 1 4.82 4Z" />
+                        </svg>
+                    </div>
+                    <div class="rounded-4xl shadow-md flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-database" viewBox="0 0 16 16">
+                            <path
+                                d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313M13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A5 5 0 0 0 13 5.698M14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A5 5 0 0 0 13 8.698m0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525" />
+                        </svg>
+                    </div>
+                    <div class="rounded-4xl shadow-md flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-box" viewBox="0 0 16 16">
+                            <path
+                                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z" />
+                        </svg>
+                    </div>
+                    <div class="rounded-4xl shadow-md flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-wifi" viewBox="0 0 16 16">
+                            <path
+                                d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049" />
+                            <path
+                                d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center bg-white rounded-lg shadow-lg p-8 space-y-3">
+                    <div class="flex items-center space-x-2 w-full">
+                        <img src="./assets/icon/Taureau.svg" alt="Icone de Taureau" class="w-12">
+                        <span>Taureau: 6</span>
+                    </div>
+                    <div class="flex items-center space-x-2 w-full">
+                        <img src="./assets/icon/Vache.svg" alt="Icone de Vache" class="w-12">
+                        <span>Vache: 8</span>
+                    </div>
+                    <div class="flex items-center space-x-2 w-full">
+                        <img src="./assets/icon/Béliers.svg" alt="Icone de Béliers" class="w-12">
+                        <span>Béliers: 10</span>
+                    </div>
+                    <div class="flex items-center space-x-2 w-full">
+                        <img src="./assets/icon/Brebis.svg" alt="Icone de Brebis" class="w-12">
+                        <span>Brebis: 12</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg py-8 px-4">
+                    <table class="border-collapse w-full">
+                        <tbody class="space-y-2">
+                            <tr class="flex justify-between text-lg">
+                                <td>Status</td>
+                                <td class="text-gray-500">Status</td>
+                            </tr>
+                            <tr class="flex justify-between text-lg">
+                            <td>Conditions</td>
+                            <td class="text-gray-500">Conditions</td>
+                        </tr>
+                        <tr class="flex justify-between text-lg">
+                            <td>Power</td>
+                            <td class="text-gray-500">Power</td>
+                        </tr>
+                        <tr class="flex justify-between text-lg">
+                            <td>Door</td>
+                            <td class="text-gray-500">Door</td>
+                        </tr>
+                        <tr class="flex justify-between text-lg">
+                            <td>Temperature</td>
+                            <td class="text-gray-500">Temperature</td>
+                        </tr>
+                        <tr class="flex justify-between text-lg">
+                            <td>Hummidity</td>
+                            <td class="text-gray-500">Hummidity</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                    <h2 class="text-gray-500 text-lg">Liste des tags RFID configurés</h2>
+                    <ul class="space-y-2 mt-2">
+                        <li class="flex space-x-2 text-lg items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" fill="green" class="bi bi-tags-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                <path
+                                    d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z" />
+                            </svg><span>TAG_1: 3</span></li>
+                        <li class="flex space-x-2 text-lg items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" fill="green" class="bi bi-tags-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                <path
+                                    d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z" />
+                            </svg><span>TAG_1: 3</span></li>
+                        <li class="flex space-x-2 text-lg items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" fill="green" class="bi bi-tags-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                <path
+                                    d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z" />
+                            </svg><span>TAG_1: 3</span></li>
+                        <li class="flex space-x-2 text-lg items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" fill="green" class="bi bi-tags-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                <path
+                                    d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z" />
+                            </svg><span>TAG_1: 3</span></li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg px-4 py-8">
+                    <ul class="space-y-4">
+                        <li class="flex space-x-2 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#c9c618"
+                                class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5z" />
+                            </svg>
+                            <p>Nombre de taches a faire: 7</p>
+                        </li>
+                        <li class="flex space-x-2 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green"
+                                class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                            </svg>
+                            <p>Nombre de taches effectuees: 8</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg py-8 px-4">
+                    <ul class="space-y-4">
+                        <li class="flex space-x-2 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="green"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>
+                            <p>Nombre de taches a faire: 7</p>
+                        </li>
+                        <li class="flex space-x-2 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="blue"
+                                class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
+                            </svg>
+                            <p>Nombre de taches a faire: 7</p>
+                        </li>
+                        <li class="flex space-x-2 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#c9c618"
+                                class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                            </svg>
+                            <p>Nombre de taches a faire: 7</p>
+                        </li>
+                        <li class="flex space-x-2 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="red"
+                                class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                            </svg>
+                            <p>Nombre de taches a faire: 7</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </main>
     </div>
     <footer></footer>
