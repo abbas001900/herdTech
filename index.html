@@ -123,8 +123,18 @@
             </ul>
         </nav>
     </header>
-    <div class="flex relative w-full h-full bg-gray-200">
-        <aside class="hidden sm:block lg:hidden fixed h-screen w-32 bg-gray-100">
+    <div class="flex relative w-full h-full group bg-gray-200">
+        <input type="checkbox" name="burger-menu" id="burger-menu" class="peer hidden"/>
+        <label for="burger-menu"
+            class="absolute top-2 left-2 z-100 transition-all duration-300 transform peer-checked:translate-x-32 sm:hidden">
+            <svg class="w-10 h-10 font-extrabold flex items-center transition-all duration-300 group-open:rotate-90 bg-white rounded-lg p-1"
+                fill="none" stroke="green" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </label>
+        <aside
+            class="transform transition-all duration-300 -translate-x-full sm:translate-x-0 peer-checked:translate-x-0 sm:block lg:hidden fixed h-screen w-32 z-10 bg-gray-100">
             <nav>
                 <ul class="flex flex-col justify-start gap-3 items-center px-8 py-4">
                     <li><a href="#"
@@ -157,6 +167,10 @@
                                 class="text-white bg-red-500 rounded-full p-1 h-8 w-8 absolute -top-2 -left-2 text-center">16</span>
                             <img src="assets/icon/Notifications.svg" class="w-10 h-10" alt="home icon" /></a>
                     </li>
+                    <li><a href="src/pages/taches/taches.html"
+                            class="flex flex-col justify-center items-center text-center w-16 h-16 cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4"><img
+                                src="assets/icon/Gestionnaire de Taches.svg" class="w-10 h-10" alt="home icon" /></a>
+                    </li>
                     <li
                         class="flex flex-col justify-center items-center text-center w-16 h-16 cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4">
                         <details class="group relative flex " name="info-details">
@@ -168,7 +182,7 @@
                                 </svg>
                             </summary>
                             <nav
-                                class="rounded-lg bg-white absolute right-0 top-full w-48 shadow-lg opacity-0 group-open:opacity-100 transition-opacity duration-300 z-10">
+                                class="rounded-lg bg-white absolute left-18 -top-full w-48 shadow-lg opacity-0 group-open:opacity-100 transition-opacity duration-300 z-10">
                                 <ul class="h-full w-full">
                                     <li class="h-full w-full hover:bg-gray-300"><a href="#"
                                             class="py-4 px-2 h-full w-full flex justify-start gap-1 items-center"><svg
@@ -189,18 +203,49 @@
                                                 fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
                                                 <path
                                                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
-                                            </svg>Langue</a></li>
+                                            </svg>Langue</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </details>
                     </li>
-                    <li><a href="src/pages/taches/taches.html"
-                            class="flex flex-col justify-center items-center text-center w-16 h-16 cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4"><img
-                                src="assets/icon/Gestionnaire de Taches.svg" class="w-10 h-10" alt="home icon" /></a>
+                    <li class="flex justify-center items-center text-center w-16 h-16 cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4">
+                        <details class="group relative" name="info-details">
+                            <summary class="flex gap-2 justify-center items-center cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                    viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                </svg>
+                            </summary>
+                            <nav
+                                class="rounded-lg bg-white absolute left-18 -top-full w-48 shadow-lg opacity-0 group-open:opacity-100 transition-opacity duration-300 z-10">
+                                <ul class="h-full w-full">
+                                    <li class="h-full w-full hover:bg-gray-300"><a href="#"
+                                            class="flex justify-start gap-2 items-center py-4 px-2 h-full w-full"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-person-fill-gear" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                                            </svg>Paramètres du compte</a></li>
+                                    <li class="h-full w-full hover:bg-gray-300"><a href="#"
+                                            class="flex justify-start gap-2 items-center py-4 px-2 h-full w-full text-red-500"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                                            </svg>Se Déconnecter</a></li>
+                                </ul>
+                            </nav>
+                        </details>
+                    </li>
                 </ul>
             </nav>
         </aside>
-        <main class="bg-gray-300 min-h-screen h-full w-full"></main>
+        <main
+            class="bg-gray-300 min-h-screen h-full w-full sm:ml-32 transform transition-all duration-300 peer-checked:translate-x-32 z-0">
+        </main>
     </div>
     <footer></footer>
     </ul>
