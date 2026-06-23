@@ -90,35 +90,35 @@
                 </li>
             </ul>
             <ul class="grid grid-cols-7 gap-4 mt-4 h-32">
-                <li><a href="#"
-                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4"><img
+                <li><a href="../../../index.html"
+                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4 transform transition-all duration-150 hover:scale-105"><img
                             src="../../../assets/icon/dashboard.svg" class="w-10 h-10" alt="home icon" />Tableau de
                         bord</a>
                 </li>
                 <li><a href="src/pages/carte/carte.html"
-                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4"><img
+                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4  transform transition-all duration-150 hover:scale-105"><img
                             src="../../../assets/icon/Carte de la ferme.svg" class="w-10 h-10"
                             alt="home icon" />Carte</a>
                 </li>
-                <li><a href="src/pages/cheptel/cheptel.html"
-                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4"><img
+                <li><a href="#"
+                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4  transform transition-all duration-150 hover:scale-105"><img
                             src="../../../assets/icon/Bovins.svg" class="w-10 h-10" alt="home icon" />Cheptel</a>
                 </li>
                 <li><a href="src/pages/stockage/stockage.html"
-                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4"><img
+                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4  transform transition-all duration-150 hover:scale-105"><img
                             src="../../../assets/icon/Stockage.svg" class="w-10 h-10" alt="home icon" />Stockage</a>
                 </li>
                 <li><a href="src/pages/suivi/suivi.html"
-                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4"><img
+                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4  transform transition-all duration-150 hover:scale-105"><img
                             src="../../../assets/icon/Suivi du bétail.svg" class="w-10 h-10" alt="home icon" />Suivi</a>
                 </li>
                 <li><a href="src/pages/taches/taches.html"
-                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4"><img
+                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4  transform transition-all duration-150 hover:scale-105"><img
                             src="../../../assets/icon/Gestionnaire de Taches.svg" class="w-10 h-10"
                             alt="home icon" />Taches</a>
                 </li>
                 <li><a href="src/pages/notifications/notifications.html"
-                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4 relative">
+                        class="flex flex-col justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-50 bg-white rounded-xl shadow-lg gap-4 px-2 py-4 relative  transform transition-all duration-150 hover:scale-105">
                         <span
                             class="text-white bg-red-500 rounded-full p-1 h-8 w-8 absolute -top-2 -left-2 text-center">16</span>
                         <img src="../../../assets/icon/Notifications.svg" class="w-10 h-10"
@@ -332,9 +332,9 @@
 
             <section>
                 <div class="flex justify-end px-4 py-6 w-full bg-white rounded-t-xl">
-                    <button class="text-lg font-medium py-1 lg:py-4 px-2 lg:text-3xl bg-green-600 text-green-50">+ Ajouter un animal</button>
+                    <button type="button" popovertarget="add-animal" class="text-lg font-medium py-1 lg:py-2 px-2 lg:text-xl bg-green-600 text-green-50 cursor-pointer">+ Ajouter un animal</button>
                 </div>
-                <div class="overflow-x-auto h-250 overflow-y-scroll mb-8 rounded-b-xl">
+                <div class="overflow-x-auto h-170 overflow-y-scroll mb-8 rounded-b-xl">
                     <table class="border-collapse table-fixed  w-full h-fit bg-white rounded-b-xl">
 
                         <thead>
@@ -391,7 +391,7 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <button class="py-2 px-auto w-32 bg-gray-400 text-gray-50">Reset</button>
+                                    <button type="reset" class="py-2 px-auto w-32 bg-gray-400 text-gray-50 cursor-pointer">Reset</button>
                                 </td>
                             </tr>
                             <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
@@ -405,11 +405,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -420,11 +420,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -435,11 +435,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -450,11 +450,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -465,11 +465,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -480,11 +480,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -495,11 +495,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -510,11 +510,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -525,11 +525,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -540,11 +540,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -555,11 +555,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -570,11 +570,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -585,11 +585,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -600,11 +600,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -615,11 +615,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -630,11 +630,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -645,11 +645,11 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
+                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center">
                                 <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
                                             type="checkbox" id="cheking-check"
                                             class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
@@ -660,233 +660,8 @@
                                 <td>12/05/2024</td>
                                 <td>12/05/2024</td>
                                 <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr class="w-full [&>td]:mb-4 [&>td]:text-center overflow-scroll">
-                                <td class="flex items-center justify-center h-full"><label for="cheking-check"><input
-                                            type="checkbox" id="cheking-check"
-                                            class="w-6 h-6 border border-black rounded-sm bg-white"></label></td>
-                                <td class="h-fit py-2 text-center">hMphiWIFXz20AHQ7f95X</td>
-                                <td class="text-center">TAG_5</td>
-                                <td>female</td>
-                                <td>bovins</td>
-                                <td>12/05/2024</td>
-                                <td>12/05/2024</td>
-                                <td class="inline-block lg:space-x-2 py-2 h-full px-auto w-full space-y-3">
-                                    <button class="py-2 w-26 px-4 text-green-100 bg-green-600">Modifier</button>
-                                    <button class="py-2 w-26 px-4 text-red-100 bg-red-600">Supprimer</button>
+                                    <button type="button" popovertarget="add-animal" class="py-2 w-26 px-4 text-green-100 bg-green-600 cursor-pointer hover:bg-green-200 hover:text-green-600">Modifier</button>
+                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');" class="py-2 w-26 px-4 text-red-100 bg-red-600 hover:bg-red-200 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -894,6 +669,65 @@
                 </div>
             </section>
         </main>
+        <div id="add-animal" popover class="pt-10 md:pt-20 w-full h-full mx-auto bg-black/50">
+            <form action="#" class="max-w-90 md:max-w-124 w-full h-fit mx-auto rounded-lg overflow-hidden bg-white">
+                <header class="bg-gray-100 py-3 relative">
+                    <h4 class="text-center text-gray-700 text-lg">Ajouter un nouvel animal</h4>
+                    <button type="button" popovertarget="add-animal" popovertargetaction="hide" class="absolute top-2 right-4 text-3xl font-medium text-gray-600 cursor-pointer">X</button>
+                </header>
+                <section class="px-6 py-4 space-y-6">
+                    <fieldset class="space-y-2">
+                        <legend class="text-gray-500">RFID Tag</legend>
+                        <label for="" class="w-full"><select name="rfid-tag" id="rfid-tag" class="w-full p-2 rounded-lg border border-black">
+                            <option value="None" selected>-- Select RFID-TAG --</option>
+                            <option value="tag-1">TAG-1</option>
+                            <option value="tag-2">TAG-2</option>
+                            <option value="tag-3">TAG-3</option>
+                            <option value="tag-5">TAG-4</option>
+                            <option value="tag-6">TAG-5</option>
+                            <option value="tag-6">TAG-6</option>
+                        </select></label>
+                    </fieldset>
+                    <fieldset class="space-y-2">
+                        <legend class="text-gray-500">Categorie</legend>
+                        <label for="" class="w-full"><select name="rfid-tag" id="rfid-tag" class="w-full p-2 rounded-lg border border-black">
+                            <option value="None" selected>-- Categorie --</option>
+                            <option value="vache">Vache</option>
+                            <option value="belier">Bélier</option>
+                            <option value="chevre">Chèvre</option>
+                            <option value="mouton">Mouton</option>
+                            <option value="taureau">Taureau</option>
+                        </select></label>
+                    </fieldset>
+                    <fieldset class="space-y-2">
+                        <legend class="text-gray-500">Sexe</legend>
+                        <label for="" class="w-full"><select name="rfid-tag" id="rfid-tag" class="w-full p-2 rounded-lg border border-black">
+                            <option value="None" selected>-- Sexe --</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select></label>
+                    </fieldset>
+                    <fieldset class="space-y-2">
+                        <legend class="text-gray-500">Naissance</legend>
+                        <label class="w-full"><input type="date" name="naissance" id="naissance" class="w-full p-2 rounded-lg border border-black"></input>
+                    </fieldset>
+                    <fieldset class="space-y-2">
+                        <legend class="text-gray-500">Status</legend>
+                        <label for="" class="w-full"><select name="rfid-tag" id="rfid-tag" class="w-full p-2 rounded-lg border border-black">
+                            <option value="None" selected>-- Status --</option>
+                            <option value="sain">Sain</option>
+                            <option value="malade">Malade</option>
+                            <option value="decede">Décédé</option>
+                            <option value="vendu">Vendu</option>
+                        </select></label>
+                    </fieldset>
+                </section>
+                <footer class="bg-gray-100 flex justify-end gap-3 py-3 px-6">
+                    <button type="button" popovertarget="add-animal" popovertargetaction="hide" class="w-34 p-2 bg-red-600 text-red-50 text-center cursor-pointer">Fermer</button>
+                    <button type="button" popovertarget="add-animal" popovertargetaction="hide" class="w-34 p-2 bg-green-600 text-green-50 text-center cursor-pointer">Valider</button>
+                </footer>
+            </form>
+        </div>
     </div>
 </body>
 
