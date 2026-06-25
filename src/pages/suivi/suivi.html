@@ -284,8 +284,8 @@
                                     class="fa-solid fa-cloud-arrow-up"></i></button>
                         </div>
                     </div>
-                    <button type="button" popovertarget="add-rfid"
-                        class="bg-green-600 gap-1 items-center justify-center flex font-medium py-2 px-4 rounded-lg hover:bg-green-500 text-white cursor-pointer">+
+                    <button type="button" popovertarget="add-tag-suivi"
+                        class="bg-green-600 gap-1 items-center justify-center flex font-medium py-2 px-4 hover:bg-green-500 text-white cursor-pointer">+
                         Configurer un nouveau traqueur RFID</button>
                 </div>
                 <div class="w-full overflow-scroll">
@@ -312,9 +312,10 @@
                                 <td><span class="rounded-sm bg-green-600 text-white text-lg py-1 px-2">5</span></td>
                                 <td class="flex items-center py-3 px-2 justify-center space-x-2">
                                     <button type="button" popovertarget="modify-suivi"
-                                        class="w-36 py-2 rounded-sm bg-green-600 text-center text-white hover:bg-green-500 cursor-pointer">Modifier</button>
-                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');"
-                                        class="w-36 py-2 rounded-sm bg-red-600 text-center text-white hover:bg-red-500 cursor-pointer">Supprimer</button>
+                                        class="w-36 py-2 bg-green-600 text-center text-green-50 hover:bg-green-50 cursor-pointer hover:text-green-600">Modifier</button>
+                                    <button type="button"
+                                        onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');"
+                                        class="w-36 py-2 bg-red-600 text-center text-red-50 hover:bg-red-50 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
                             <tr class="hover:bg-gray-300 w-full">
@@ -328,9 +329,10 @@
                                 <td><span class="rounded-sm bg-green-600 text-white text-lg py-1 px-2">11</span></td>
                                 <td class="flex items-center py-3 px-2 justify-center space-x-2">
                                     <button type="button" popovertarget="modify-suivi"
-                                        class="w-36 py-2 rounded-sm bg-green-600 text-center text-white hover:bg-green-500 cursor-pointer">Modifier</button>
-                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');"
-                                        class="w-36 py-2 rounded-sm bg-red-600 text-center text-white hover:bg-red-500 cursor-pointer">Supprimer</button>
+                                        class="w-36 py-2 bg-green-600 text-center text-green-50 hover:bg-green-50 cursor-pointer hover:text-green-600">Modifier</button>
+                                    <button type="button"
+                                        onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');"
+                                        class="w-36 py-2 bg-red-600 text-center text-red-50 hover:bg-red-50 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
                             <tr class="hover:bg-gray-300 w-full">
@@ -344,9 +346,10 @@
                                 <td><span class="rounded-sm bg-green-600 text-white text-lg py-1 px-2">6</span></td>
                                 <td class="flex items-center py-3 px-2 justify-center space-x-2">
                                     <button type="button" popovertarget="modify-suivi"
-                                        class="w-36 py-2 rounded-sm bg-green-600 text-center text-white hover:bg-green-500 cursor-pointer">Modifier</button>
-                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');"
-                                        class="w-36 py-2 rounded-sm bg-red-600 text-center text-white hover:bg-red-500 cursor-pointer">Supprimer</button>
+                                        class="w-36 py-2 bg-green-600 text-center text-green-50 hover:bg-green-50 cursor-pointer hover:text-green-600">Modifier</button>
+                                    <button type="button"
+                                        onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');"
+                                        class="w-36 py-2 bg-red-600 text-center text-red-50 hover:bg-red-50 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
                             <tr class="hover:bg-gray-300 w-full">
@@ -360,9 +363,10 @@
                                 <td><span class="rounded-sm bg-green-600 text-white text-lg py-1 px-2">7</span></td>
                                 <td class="flex items-center py-3 px-2 justify-center space-x-2">
                                     <button type="button" popovertarget="modify-suivi"
-                                        class="w-36 py-2 rounded-sm bg-green-600 text-center text-white hover:bg-green-500 cursor-pointer">Modifier</button>
-                                    <button type="button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');"
-                                        class="w-36 py-2 rounded-sm bg-red-600 text-center text-white hover:bg-red-500 cursor-pointer">Supprimer</button>
+                                        class="w-36 py-2 bg-green-600 text-center text-green-50 hover:bg-green-50 cursor-pointer hover:text-green-600">Modifier</button>
+                                    <button type="button"
+                                        onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?');"
+                                        class="w-36 py-2 bg-red-600 text-center text-red-50 hover:bg-red-50 hover:text-red-600 cursor-pointer">Supprimer</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -371,23 +375,101 @@
             </section>
         </main>
         <div id="modify-suivi" popover class="pt-10 md:pt-20 w-full h-full mx-auto bg-black/50">
-            <form action="#" class="max-w-90 md:max-w-124 w-full h-fit mx-auto rounded-lg overflow-hidden bg-white">
+            <form action="#" class="max-w-full md:max-w-160 w-full h-fit mx-auto rounded-lg overflow-hidden bg-white">
                 <header class="bg-gray-100 py-3 relative">
                     <h4 class="text-center text-gray-700 text-lg">Modifier ce Tag RFID</h4>
-                    <button type="button" popovertarget="modify-suivi" popovertargetaction="hide" class="absolute top-2 right-4 text-3xl font-medium text-gray-600 cursor-pointer">X</button>
+                    <button type="button" popovertarget="modify-suivi" popovertargetaction="hide"
+                        class="absolute top-2 right-4 text-3xl font-medium text-gray-600 cursor-pointer">X</button>
                 </header>
                 <section class="px-6 py-4 space-y-6">
                     <fieldset class="flex flex-col gap-2">
                         <label for="tag-label">Tag label</label>
-                        <input type="text" name="tag-label" id="tag-label" placeholder="TAG-2" class="p-2 rounded-lg w-full border border-gray-600 focus:outline-green-600">
+                        <input type="text" name="tag-label" id="tag-label" placeholder="TAG-2"
+                            class="p-2 rounded-lg w-full border border-gray-600 focus:outline-green-600">
                     </fieldset>
-                    <fieldset>
-                        <legend for="form-tag">Animaux avec ce Tag</legend>
+                    <div class="w-full overflow-scroll">
+                        <fieldset class="overflow-scroll">
+                            <legend for="form-tag">Animaux avec ce Tag</legend>
+                            <div class="w-full overflow-x-scroll">
+                                <table class="w-full border-collapse table-fixed h-fit text-center">
+                                    <thead>
+                                        <tr class=" bg-gray-300">
+                                            <th class="py-1.5 px-2 w-60">ID</th>
+                                            <th class="py-1.5 px-2 w-32">Catégorie</th>
+                                            <th class="py-1.5 px-2 w-32">Sexe</th>
+                                            <th class="py-1.5 px-2 w-32">Statut</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="py-1.5 px-2">azllernbbfhgldgffgdggd</td>
+                                            <td>Ovins</td>
+                                            <td>Male</td>
+                                            <td>malade</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-1.5 px-2">azllernbbfhgldgffgdggd</td>
+                                            <td>Ovins</td>
+                                            <td>Male</td>
+                                            <td>malade</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-1.5 px-2">azllernbbfhgldgffgdggd</td>
+                                            <td>Ovins</td>
+                                            <td>Male</td>
+                                            <td>malade</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-1.5 px-2">azllernbbfhgldgffgdggd</td>
+                                            <td>Ovins</td>
+                                            <td>Male</td>
+                                            <td>malade</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-1.5 px-2">azllernbbfhgldgffgdggd</td>
+                                            <td>Ovins</td>
+                                            <td>Male</td>
+                                            <td>malade</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </fieldset>
+                    </div>
+                </section>
+                <footer class="bg-gray-100 flex justify-end gap-3 py-3 px-6">
+                    <button type="button" popovertarget="modify-suivi" popovertargetaction="hide"
+                        class="w-34 p-2 bg-red-600 text-red-50 text-center cursor-pointer">Fermer</button>
+                    <button type="button" popovertarget="modify-suivi" popovertargetaction="hide"
+                        class="w-34 p-2 bg-green-600 text-green-50 text-center cursor-pointer">Valider</button>
+                </footer>
+            </form>
+        </div>
+        <div popover id="add-tag-suivi" class="pt-10 md:pt-20 w-full h-full bg-black/50">
+            <form action="#" class="max-w-96 md:max-w-150 w-full mx-auto rounded-lg bg-white space-y-2">
+                <header class="bg-gray-100 py-3 relative">
+                    <h4 class="text-center text-gray-700 text-lg">Modifier ce Tag RFID</h4>
+                    <button type="button" popovertarget="add-tag-suivi" popovertargetaction="hide"
+                        class="absolute top-2 right-4 text-3xl font-medium text-gray-600 cursor-pointer">X</button>
+                </header>
+                <section class="w-full">
+                    <fieldset class="w-full">
+                        <div class="relative w-full mt-4 px-2">
+                            <input type="text" id="outlined-basic" placeholder=" " class="peer w-full px-3 py-2.5 text-gray-900 bg-transparent border border-gray-300 rounded-md 
+               focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600 transition-all" />
+                            <label for="outlined-basic" class="absolute left-3 top-2.5 z-10 origin-[0] -translate-y-4 scale-75 transform bg-white px-1 text-sm text-gray-500 duration-300 
+               peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 
+               peer-focus:left-3 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:text-green-600">
+                                Veuillez entrer le TAG du nouveau traqueur
+                            </label>
+                        </div>
                     </fieldset>
                 </section>
                 <footer class="bg-gray-100 flex justify-end gap-3 py-3 px-6">
-                    <button type="button" popovertarget="modify-suivi" popovertargetaction="hide" class="w-34 p-2 bg-red-600 text-red-50 text-center cursor-pointer">Fermer</button>
-                    <button type="button" popovertarget="modify-suivi" popovertargetaction="hide" class="w-34 p-2 bg-green-600 text-green-50 text-center cursor-pointer">Valider</button>
+                    <button type="button" popovertarget="add-tag-suivi" popovertargetaction="hide"
+                        class="w-34 p-2 bg-red-600 text-red-50 text-center cursor-pointer">Fermer</button>
+                    <button type="button" popovertarget="add-tag-suivi" popovertargetaction="hide"
+                        class="w-34 p-2 bg-green-600 text-green-50 text-center cursor-pointer">Valider</button>
                 </footer>
             </form>
         </div>
